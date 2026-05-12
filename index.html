@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Digimon — Front simples</title>
+    <meta
+      name="description"
+      content="Front simples inspirado na estética digital de Digimon (sem imagens ou conteúdo protegido)."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand" aria-label="Marca">
+          <div class="brand-badge" aria-hidden="true">
+            <span class="brand-badge__pixel"></span>
+          </div>
+          <div class="brand-text">
+            <strong class="brand-title">DIGI•FRONT</strong>
+            <span class="brand-subtitle">tema inspirado • layout simples</span>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a class="nav-link" href="#parceiros">Parceiros</a>
+          <a class="nav-link" href="#evolucoes">Evoluções</a>
+          <a class="nav-link" href="#status">Status</a>
+        </nav>
+
+        <div class="header-actions">
+          <button id="btnAlternarModo" class="btn btn--ghost" type="button">
+            Alternar brilho
+          </button>
+          <a class="btn" href="#parceiros">Começar</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo" class="site-main">
+      <section class="hero" aria-label="Introdução">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Mundo digital</p>
+            <h1 class="hero-title">
+              Um front simples com estética <span class="accent">digital</span>
+            </h1>
+            <p class="hero-subtitle">
+              Cards, grids e detalhes “pixel” para um tema inspirado em Digimon.
+              Sem imagens do anime — só UI.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn" href="#parceiros">Ver parceiros</a>
+              <button id="btnSortear" class="btn btn--ghost" type="button">
+                Sortear parceiro
+              </button>
+            </div>
+
+            <p class="hint" id="hintSorteio" role="status" aria-live="polite"></p>
+          </div>
+
+          <div class="hero-panel" aria-hidden="true">
+            <div class="scanlines"></div>
+            <div class="panel-inner">
+              <div class="panel-top">
+                <span class="chip">SYS</span>
+                <span class="chip">NET</span>
+                <span class="chip">D-VICE</span>
+              </div>
+              <div class="panel-grid">
+                <div class="grid-block"></div>
+                <div class="grid-block"></div>
+                <div class="grid-block"></div>
+                <div class="grid-block"></div>
+                <div class="grid-block"></div>
+                <div class="grid-block"></div>
+              </div>
+              <div class="panel-bottom">
+                <span class="mono">ping: 8ms</span>
+                <span class="mono">sync: ok</span>
+                <span class="mono">packets: 128</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="parceiros" class="section" aria-label="Parceiros">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Parceiros (exemplo de cards)</h2>
+            <p class="section-subtitle">
+              Nomes são apenas referência temática. Você pode substituir por dados
+              reais da sua API depois.
+            </p>
+          </div>
+
+          <div class="toolbar" role="region" aria-label="Controles">
+            <label class="field">
+              <span class="field-label">Buscar</span>
+              <input
+                id="inputBusca"
+                class="input"
+                type="search"
+                placeholder="Digite um nome…"
+                autocomplete="off"
+              />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Atributo</span>
+              <select id="selectAtributo" class="select">
+                <option value="">Todos</option>
+                <option value="Vaccine">Vaccine</option>
+                <option value="Data">Data</option>
+                <option value="Virus">Virus</option>
+              </select>
+            </label>
+
+            <button id="btnLimpar" class="btn btn--ghost" type="button">
+              Limpar
+            </button>
+          </div>
+
+          <div id="gridCards" class="grid" aria-live="polite"></div>
+
+          <p class="small" id="resultado" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section id="evolucoes" class="section" aria-label="Evoluções">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Linha de evolução (mock)</h2>
+            <p class="section-subtitle">
+              Uma timeline simples para representar evolução/transformação.
+            </p>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <strong>Bebê</strong>
+                <p class="small">Estágio inicial — alto potencial.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <strong>Treinamento</strong>
+                <p class="small">Aprende padrões e ganha estabilidade.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <strong>Rookie</strong>
+                <p class="small">Começa a definir atributo e estilo.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="timeline-card">
+                <strong>Champion</strong>
+                <p class="small">Evolução focada — força aumenta.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="status" class="section" aria-label="Status">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Status (UI)</h2>
+            <p class="section-subtitle">
+              Barras e números para simular leitura de “dispositivo”.
+            </p>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-head">
+                <strong>Energia</strong>
+                <span class="mono" id="energiaVal">72%</span>
+              </div>
+              <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72">
+                <div class="bar-fill" style="width: 72%"></div>
+              </div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-head">
+                <strong>Sincronia</strong>
+                <span class="mono" id="syncVal">88%</span>
+              </div>
+              <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88">
+                <div class="bar-fill" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-head">
+                <strong>Integridade</strong>
+                <span class="mono" id="integVal">94%</span>
+              </div>
+              <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="94">
+                <div class="bar-fill" style="width: 94%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="notice" role="note">
+            <strong>Próximo passo</strong>
+            <p class="small">
+              Se você já tem uma API (ex.: Digimon API), eu adapto o JS para
+              consumir e renderizar os cards com dados reais.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="small">
+          Projeto de fan UI: sem imagens do anime e sem conteúdo protegido.
+        </p>
+        <p class="small mono">2026 • DIGI•FRONT</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
