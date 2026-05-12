@@ -8,8 +8,8 @@
   --border: rgba(255, 255, 255, 0.14);
   --grid: rgba(255, 255, 255, 0.07);
 
-  --accent: #43d3ff;
-  --accent2: #ffd45c;
+  --accent: #ff8a1f;
+  --accent2: #ffcf63;
 
   --radius: 14px;
   --radius-sm: 10px;
@@ -19,10 +19,10 @@
 }
 
 html[data-glow="on"] {
-  --panel: rgba(67, 211, 255, 0.08);
+  --panel: rgba(255, 138, 31, 0.08);
   --panel2: rgba(255, 212, 92, 0.10);
-  --border: rgba(67, 211, 255, 0.22);
-  --grid: rgba(67, 211, 255, 0.10);
+  --border: rgba(255, 138, 31, 0.22);
+  --grid: rgba(255, 138, 31, 0.10);
 }
 
 * {
@@ -37,7 +37,7 @@ body {
 body {
   margin: 0;
   color: var(--text);
-  background: radial-gradient(1200px 800px at 25% -10%, rgba(67, 211, 255, 0.20), transparent 60%),
+  background: radial-gradient(1200px 800px at 25% -10%, rgba(255, 138, 31, 0.22), transparent 60%),
     radial-gradient(900px 700px at 90% 10%, rgba(255, 212, 92, 0.12), transparent 55%),
     linear-gradient(180deg, #04070f, var(--bg));
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -97,7 +97,7 @@ a {
   height: 44px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: linear-gradient(135deg, rgba(67, 211, 255, 0.18), rgba(255, 212, 92, 0.10));
+  background: linear-gradient(135deg, rgba(255, 138, 31, 0.20), rgba(255, 212, 92, 0.10));
   box-shadow: var(--shadow);
   display: grid;
   place-items: center;
@@ -301,7 +301,7 @@ a {
 .grid-block {
   border-radius: 12px;
   border: 1px solid var(--grid);
-  background: radial-gradient(120px 90px at 20% 20%, rgba(67, 211, 255, 0.16), transparent 60%),
+  background: radial-gradient(120px 90px at 20% 20%, rgba(255, 138, 31, 0.18), transparent 60%),
     radial-gradient(120px 90px at 80% 70%, rgba(255, 212, 92, 0.12), transparent 60%),
     rgba(0, 0, 0, 0.22);
 }
@@ -365,7 +365,7 @@ a {
 
 .input:focus,
 .select:focus {
-  border-color: rgba(67, 211, 255, 0.40);
+  border-color: rgba(255, 138, 31, 0.42);
 }
 
 .grid {
@@ -480,7 +480,7 @@ a {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.22);
   background: linear-gradient(135deg, var(--accent), var(--accent2));
-  box-shadow: 0 0 0 4px rgba(67, 211, 255, 0.08);
+  box-shadow: 0 0 0 4px rgba(255, 138, 31, 0.10);
 }
 
 .timeline-card {
@@ -529,7 +529,7 @@ a {
   margin-top: 16px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: linear-gradient(180deg, rgba(67, 211, 255, 0.09), rgba(0, 0, 0, 0.18));
+  background: linear-gradient(180deg, rgba(255, 138, 31, 0.10), rgba(0, 0, 0, 0.18));
   padding: 14px;
 }
 
