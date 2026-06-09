@@ -1,0 +1,7 @@
+[33m06ffcce[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m feat: adiciona novas funcionalidades na atualização
+[33mb0fdebe[m feat: adiciona novas funcionalidades na atualização
+[33m87ba3c4[m ci: adiciona workflow de deploy automatizado
+[33m39f8d87[m inplementação vercel
+[33m790e63a[m[33m ([m[1;33mtag: [m[1;33mv1.0.1[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Corrige um detalhe para a versão 1.0.1
+[33mf5e990a[m[33m ([m[1;33mtag: [m[1;33mv1.0.0[m[33m)[m Finaliza a primeira versão do projeto
+[33m8a9daef[m iniciando projeto front
